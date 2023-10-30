@@ -62,3 +62,74 @@ git reset
 10. run git reset --hard to reset the index and the working copy
 
 git reset --hard
+
+
+//more git 
+show → show the details of a commit (metadata + diff)
+
+git show 
+commit 1d0dec96ba8b9541805c618f43ed19cf87d05242 (HEAD -> main, origin/main, origin/HEAD)
+Author: Flavian92 <flavian>
+Date:   Mon Oct 30 14:07:22 2023 +0100
+
+    mod fileprova
+
+diff --git a/fileprova.txt b/fileprova.txt
+index b00ce13..70c379b 100644
+--- a/fileprova.txt
++++ b/fileprova.txt
+@@ -1 +1 @@
+-hi^^^
+\ No newline at end of file
++Hello world
+\ No newline at end of file
+
+
+ git log  show the history
+commit 1d0dec96ba8b9541805c618f43ed19cf87d05242 (HEAD -> main, origin/main, origin/HEAD)
+Author: Flavian92 <flavian
+Date:   Mon Oct 30 14:07:22 2023 +0100
+
+    mod fileprova
+
+commit 70005a59ecbade5b231902f018ae45c0f5206af5
+Author: Flavian92 <flavian
+Date:   Mon Oct 30 13:58:24 2023 +0100
+
+    14:00
+
+commit d4e0ccd80523f2d9675b7f9a5929b11a05c02595
+Author: Flavian92 <flavian
+Date:   Mon Oct 30 13:48:15 2023 +0100
+
+
+Creating a new branch
+git checkout -b new branch [ starting point ]
+ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\zefif\OneDrive\DEVOPS\02Git\startergit\gitpractising-1> git checkout -b development
+Switched to a new branch 'development'
+PS C:\Users\zefif\OneDrive\DEVOPS\02Git\startergit\gitpractising-1> git status
+On branch development
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+
+Switching between branches
+git checkout [-m] branch name
+ git checkout -m main  
+Switched to branch 'main'
+M       README.md
+Your branch is up to date with 'origin/main'.

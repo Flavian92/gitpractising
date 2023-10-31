@@ -1,6 +1,14 @@
 # gitpractising
 learning git
 
+git accaunt
+git config --global user.name "Flavian"
+git config --global user.email "flavian@libero.com"
+
+Initialise directory:
+1 navigate directory 
+2 git init
+
 exercise 1
 
 navigate to a directory or create a folder mkdir gitpractising-1
